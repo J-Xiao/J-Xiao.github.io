@@ -24,6 +24,12 @@ $(document).ready(function () {
         }, 1000);
     });
     
+    $("#arrowup").click(function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 3500);
+    });
+    
     $(".nav li a").mouseenter(function(){
         $(this).addClass("triggerHover");
     });

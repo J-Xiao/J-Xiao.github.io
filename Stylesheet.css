@@ -157,17 +157,21 @@ body{
     font-size:50px;
 }
 
-#arrowdown{
+#arrowdown, #arrowup{
     float:inherit;
     margin:0 auto 0 auto;
-    background: url(img/arrow.png) center bottom;
+    background: url(img/arrowdown.png) center bottom;
     border-bottom-left-radius:8px;
     border-bottom-right-radius: 8px;
     height:63px;
     width:103px;
 }
 
-#arrowdown:hover{
+#arrowup{
+    background: url(img/arrowup.png) center bottom;
+}
+
+#arrowdown:hover, #arrowup:hover{
     cursor: pointer;
 }
 
@@ -276,16 +280,19 @@ img{
     text-align: center;
 }
 
-
-.about img{
+.about img, #arrowdown, #arrowup{
     box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
     -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    border-radius:267px;
+    border-radius:10px;
     transition: all .5s;
 }
 
-.about img:hover{
+.about img{
+    border-radius:267px;
+}
+
+.about img:hover, #arrowdown:hover, #arrowup:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
     -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
     -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
@@ -616,6 +623,7 @@ section#contact{
 
 .btn{
     font-size:20px;
+    transition:all .5s;
 }
 
 .btn-xl2 {
@@ -636,4 +644,13 @@ section#contact{
 .btn-xl2:active {
 	color: #fff;
 	background-color: #888;
+}
+
+.close-modal{
+    transition: all .5s;
+}
+
+.portfolio-link img{
+    height:270px;
+    width:360px;
 }
