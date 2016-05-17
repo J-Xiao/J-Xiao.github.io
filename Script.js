@@ -9,6 +9,7 @@ if (typeof jQuery !== 'undefined') {
 */ 
 
 $(document).ready(function () {
+    /*
     $("#arrowdown").mouseenter(function(){
         $(this).animate({height:150});
     });
@@ -16,7 +17,7 @@ $(document).ready(function () {
     $("#arrowdown").mouseleave(function(){
         $(this).animate({height:63});
     });
-    
+    */
     $("#arrowdown").click(function(){
         $('html, body').animate({
             scrollTop: $(".quote").offset().top
