@@ -263,7 +263,7 @@ img{
 
 .quote{
     font-family:'Tangerine', Brush Script std;
-    padding:200px 0 200px 0;
+    padding:175px 0 150px 0;
 }
 
 .quote div{
@@ -648,9 +648,4 @@ section#contact{
 
 .close-modal{
     transition: all .5s;
-}
-
-.portfolio-link img{
-    height:270px;
-    width:360px;
 }
